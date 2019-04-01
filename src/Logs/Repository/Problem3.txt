@@ -1,0 +1,360 @@
+_________________________________________________________________
+
+ ExecStack:
+	c = 5 - 1 ; if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	c = 5 - 1
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 }
+	print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (v)
+
+
+ SymbolTabel: 
+	v = 1
+	c = 4
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	v = 1
+	c = 4
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+ ExecStack:
+	c = 5 - 1 ; if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	c = 5 - 1
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 }
+	print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+
+ SymbolTabel: 
+	c = 4
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (v)
+
+
+ SymbolTabel: 
+	v = 1
+	c = 4
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	v = 1
+	c = 4
+
+
+ Output:
+	1, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	c = 5 - 1
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 } ; print (v)
+
+[
+ SymbolTabel: 
+	c = 4
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	if (c) { v = 1 } else { v = 2 }
+	print (v)
+
+[
+ SymbolTabel: 
+	c = 4
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	v = 1
+	print (v)
+
+[
+ SymbolTabel: 
+	c = 4
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	print (v)
+
+[
+ SymbolTabel: 
+	c = 4
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4408fb7b-ab65-4224-830c-a7b90500d7ef	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	c = 4
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="pane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GUIController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <GridPane prefHeight="720.0" prefWidth="1280.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" percentWidth="33.33" prefWidth="225.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" percentWidth="33.33" prefWidth="225.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="457.0" minWidth="10.0" percentWidth="33.33" prefWidth="183.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="457.0" minWidth="10.0" percentWidth="33.33" prefWidth="280.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="457.0" minWidth="10.0" percentWidth="33.33" prefWidth="280.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="208.0" minHeight="0.0" percentHeight="45.0" prefHeight="208.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="461.0" minHeight="3.0" percentHeight="45.0" prefHeight="447.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="71.0" minHeight="0.0" percentHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="2.0" GridPane.columnIndex="1">
+               <children>
+                  <TitledPane text="Program States">
+                     <content>
+                        <VBox>
+                           <children>
+                              <ListView fx:id="prgStates" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ececec;" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+              <buttons>
+                <Button fx:id="startExecution" mnemonicParsing="false" text="Start Execution" />
+                  <Button fx:id="nextStepBtn" mnemonicParsing="false" text="Next Step" />
+              </buttons>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </ButtonBar>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+               <children>
+                  <TitledPane text="Execution Stack" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox>
+                           <children>
+                              <ListView fx:id="stack" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox GridPane.columnIndex="3">
+               <children>
+                  <TitledPane text="Output" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox prefHeight="1053.0" prefWidth="278.0">
+                           <children>
+                              <ListView fx:id="output" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <TitledPane text="Symbol Table">
+                     <content>
+                        <VBox>
+                           <children>
+                              <TableView fx:id="symbtbl" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TitledPane text="FileTable">
+                     <content>
+                        <VBox>
+                           <children>
+                              <TableView fx:id="filetbl" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <TitledPane text="Heap">
+                     <content>
+                        <VBox>
+                           <children>
+                              <TableView fx:id="heap" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TitledPane text="Available Examples">
+                     <content>
+                        <VBox>
+                           <children>
+                              <ListView fx:id="examples" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <VBox GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <children>
+                     <TitledPane text="BarrierTable" VBox.vgrow="ALWAYS">
+                        <content>
+                           <VBox prefHeight="1053.0" prefWidth="278.0">
+                              <children>
+                                 <TableView fx:id="barriers" />
+                              </children>
+                           </VBox>
+                        </content>
+                     </TitledPane>
+                  </children>
+			</VBox>
+			<VBox GridPane.columnIndex="4" GridPane.rowIndex="0">
+                  <children>
+                     <TitledPane text="SemaphTable" VBox.vgrow="ALWAYS">
+                        <content>
+                           <VBox prefHeight="1053.0" prefWidth="278.0">
+                              <children>
+                                 <TableView fx:id="semaphores" />
+                              </children>
+                           </VBox>
+                        </content>
+                     </TitledPane>
+                  </children>
+			</VBox>
+         </children>
+         <opaqueInsets>
+            <Insets top="2.0" />
+         </opaqueInsets>
+      </GridPane>
+
+    </AnchorPane>
+  </children>
+</VBox>

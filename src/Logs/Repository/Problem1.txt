@@ -1,0 +1,333 @@
+_________________________________________________________________
+
+ ExecStack:
+	v = 1 ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (v)
+
+
+ SymbolTabel: 
+	v = 1
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	v = 1
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+ ExecStack:
+	v = 1 ; print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (v)
+
+
+ SymbolTabel: 
+	v = 1
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	v = 1
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+ ExecStack:
+	v = 1 ; print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	1, 
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	1, 
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	1, 
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	1, 
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1 ; print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 1
+	print (v)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (v)
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Output:
+	1, 
+
+ Heap: 
+	Empty
+

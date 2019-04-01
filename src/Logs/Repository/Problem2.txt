@@ -1,0 +1,347 @@
+_________________________________________________________________
+
+ ExecStack:
+	a = 2 + 3 * 4 ; b = a - 8 / 2 + 5 ; print (b)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 2 + 3 * 4 ; b = a - 8 / 2 + 5
+	print (b)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 2 + 3 * 4
+	b = a - 8 / 2 + 5
+	print (b)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	b = a - 8 / 2 + 5
+	print (b)
+
+
+ SymbolTabel: 
+	a = 14
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (b)
+
+
+ SymbolTabel: 
+	a = 14
+	b = 15
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 14
+	b = 15
+
+
+ Output:
+	15, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a15c0cf1-e240-438e-a797-35b47d5c41dc	
+
+ ExecStack:
+	a = 2 + 3 * 4 ; b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a15c0cf1-e240-438e-a797-35b47d5c41dc	
+
+ ExecStack:
+	a = 2 + 3 * 4
+	b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a15c0cf1-e240-438e-a797-35b47d5c41dc	
+
+ ExecStack:
+	b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	a = 14
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a15c0cf1-e240-438e-a797-35b47d5c41dc	
+
+ ExecStack:
+	print (b)
+
+[
+ SymbolTabel: 
+	a = 14
+	b = 15
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a15c0cf1-e240-438e-a797-35b47d5c41dc	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 14
+	b = 15
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	15, 
+_________________________________________________________________
+
+PrgState GUID: ea662005-cef2-44d7-b797-b6fed7a19307	
+
+ ExecStack:
+	a = 2 + 3 * 4 ; b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ea662005-cef2-44d7-b797-b6fed7a19307	
+
+ ExecStack:
+	a = 2 + 3 * 4
+	b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ea662005-cef2-44d7-b797-b6fed7a19307	
+
+ ExecStack:
+	b = a - 8 / 2 + 5
+	print (b)
+
+[
+ SymbolTabel: 
+	a = 14
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ea662005-cef2-44d7-b797-b6fed7a19307	
+
+ ExecStack:
+	print (b)
+
+[
+ SymbolTabel: 
+	a = 14
+	b = 15
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ea662005-cef2-44d7-b797-b6fed7a19307	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 14
+	b = 15
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	15, 

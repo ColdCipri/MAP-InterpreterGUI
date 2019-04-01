@@ -1,0 +1,1305 @@
+_________________________________________________________________
+
+ ExecStack:
+	v = 10 ; new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22) 
+	wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30) ; print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30)
+	print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a) ; print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a)
+	print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (Expression.HeapReadExp@4f7d0008) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (Expression.HeapReadExp@4f7d0008)
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 0
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10 ; new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22) 
+	wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30) ; print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30)
+	print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a) ; print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a)
+	print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH( a )) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH( a ))
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 0
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10 ; new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22) 
+	wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	wH( a, 30)
+	print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a) ; print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a)
+	print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH (a) ) ; a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH (a) )
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 0
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 0
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	2, 	30, 
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	v = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	v = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	new( a, 22)  ; wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	new( a, 22) 
+	wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	wH( a, 30) ; print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	wH( a, 30)
+	print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	print (a) ; print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	print (a)
+	print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	print (rH (a) ) ; a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	2, 
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	print (rH (a) )
+	a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	2, 
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	a = 0
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	2, 	30, 
+_________________________________________________________________
+
+PrgState GUID: 3c9cc76b-cae3-416a-bd78-20793f398df0	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 0
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	2, 	30, 

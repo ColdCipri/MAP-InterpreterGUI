@@ -1,0 +1,437 @@
+_________________________________________________________________
+
+ ExecStack:
+	v = 10 ; new( v, 20)  ; new( a, 22)  ; print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	v = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22)  ; print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 22) 
+	print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	print (100 + Expression.HeapReadExp@553f17c) ; print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	print (100 + Expression.HeapReadExp@553f17c)
+	print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	print (100 + Expression.HeapReadExp@4f7d0008)
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	120, 
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 2
+	v = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	120, 	122, 
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	v = 10
+	new( v, 20)  ; new( a, 22)  ; print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	new( v, 20)  ; new( a, 22)  ; print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	v = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	new( v, 20) 
+	new( a, 22)  ; print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	v = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	new( a, 22)  ; print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	new( a, 22) 
+	print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	print (100 + rH (v) ) ; print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	print (100 + rH (v) )
+	print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	print (100 + rH (a) )
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Output:
+	120, 
+_________________________________________________________________
+
+PrgState GUID: d60ab8d9-49eb-4e45-8080-9029b6896d7d	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 2
+	v = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 22
+
+
+ Output:
+	120, 	122, 

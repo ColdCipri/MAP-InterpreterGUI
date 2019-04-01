@@ -1,0 +1,84 @@
+_________________________________________________________________
+
+ ExecStack:
+	a = 10 + 2 < 6  ; print (a)
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 10 + 2 < 6 
+	print (a)
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (a)
+
+
+ SymbolTabel: 
+	a = 11
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	a = 11
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	11, 
+
+ Heap: 
+	Empty
+

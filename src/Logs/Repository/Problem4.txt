@@ -1,0 +1,2533 @@
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c"
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c"
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c") ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c") ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c") ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c") ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c")
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c") ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c") ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c") ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c") ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c")
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = java.io.BufferedReader@553f17c
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+false
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (100) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	0, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (100)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	0, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	0, 	100, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	0, 	100, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 0
+
+
+ Output:
+	1, 	0, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	openReadFileStmt(var_f, "src/Input/input.txt"
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	Empty
+
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	0 = false
+
+_________________________________________________________________
+
+ ExecStack:
+	Empty
+
+
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+
+
+ Output:
+	1, 	12, 
+
+FileTable: 
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	print (var_c)
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	if (var_c) { readFileStmt(var_f, "var_c" ) ; print (var_c) } else { print (0) }
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" ) ; print (var_c)
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	readFileStmt(var_f, "var_c" )
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 1
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	print (var_c)
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	closeReadFileStmt( var_f)
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+]
+
+FileTable: 
+	0 = false
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 	12, 
+_________________________________________________________________
+
+PrgState GUID: e7383276-4928-44ee-aa54-4ad22e664928	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	var_f = 0
+	var_c = 12
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	1, 	12, 

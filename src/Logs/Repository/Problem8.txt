@@ -1,0 +1,847 @@
+_________________________________________________________________
+
+ ExecStack:
+	a = 10 ; new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 10
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	Empty
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	new( a, 20) 
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 10
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	Empty
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH (a) )
+	a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 100 ; print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	20, 
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	a = 100
+	print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 1
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	20, 
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+ ExecStack:
+	print (rH (a) )
+
+
+ SymbolTabel: 
+	a = 100
+
+
+FileTable: 
+	Empty
+
+
+ Output:
+	20, 
+
+ Heap: 
+	1 = 20
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	a = 10
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	new( a, 20) 
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	print (rH (a) )
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	a = 100
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: b3fa23d1-2bc9-4010-9837-104f8a6b05da	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	a = 10
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	new( a, 20) 
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	print (rH (a) )
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	a = 100
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: 23020547-9640-40a1-a951-a928b9ba7f5d	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	a = 10
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	new( a, 20)  ; print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	new( a, 20) 
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 10
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	print (rH (a) ) ; a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	print (rH (a) )
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	a = 100 ; print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	a = 100
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	print (rH (a) )
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	20, 
+_________________________________________________________________
+
+PrgState GUID: c1528dd8-7991-4fa7-b61e-39dd5a20faaf	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	a = 100
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	20, 

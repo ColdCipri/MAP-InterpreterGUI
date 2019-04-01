@@ -1,0 +1,3274 @@
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	new( v1, 2) 
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	new( v2, 3) 
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	new( v3, 4) 
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	await( cnt)
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	await( cnt)
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 9ce313dc-dbd2-4a01-a614-efc7f0a2b568	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10)
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 4f4fb41d-68c7-4685-b325-9d77e23e91d3	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: ab591d43-6362-4b61-afa5-5d993b98c063	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 	300, 
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	new( v1, 2) 
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	new( v2, 3) 
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	new( v3, 4) 
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	await( cnt)
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	await( cnt)
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a0ee05e2-2e65-43ee-bf4b-ab4112f0f501	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10)
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 38b41a38-6410-4085-8b49-eb53a0dd07f4	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3054cb17-d648-4eb5-8e19-b630e9028d65	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+
+ Output:
+	4, 	20, 	300, 
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	new( v1, 2) 
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	new( v2, 3) 
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	new( v3, 4) 
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	await( cnt)
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	await( cnt)
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 27fe8f13-787c-41aa-8318-3a02c5701b7d	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10)
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: db20fb4c-5c14-40c3-88c5-e01fe957351a	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: 3ccaf5b6-1d92-4077-9f4e-7092d73b255a	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@5998850d
+
+ Output:
+	4, 	20, 	300, 
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	new( v1, 2) 
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	Empty
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	Empty
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	new( v2, 3)  ; new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	new( v2, 3) 
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	new( v3, 4)  ; newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	new( v3, 4) 
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	newBarrier( cnt, rH (v2) )
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )) 
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	fork (await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )) 
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	await( cnt) ; wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	await( cnt)
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	await( cnt)
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	await( cnt) ; wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	print (rH (v3) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10) ; print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	await( cnt)
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	Empty
+
+_________________________________________________________________
+
+PrgState GUID: 04597912-a23e-460c-8aad-829eed1d8358	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	wH( v1, rH (v1)  * 10)
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 2
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	print (rH (v1) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 3
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 
+_________________________________________________________________
+
+PrgState GUID: baed4db9-69dc-4cfd-a6b9-fc4d8aba86d8	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10) ; print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	wH( v2, rH (v2)  * 10)
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 30
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	print (rH (v2) )
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 	20, 
+_________________________________________________________________
+
+PrgState GUID: a5408a86-bcd6-41f2-aff2-6707f9ecacda	
+
+ ExecStack:
+	Empty
+
+[
+ SymbolTabel: 
+	cnt = 0
+	v1 = 1
+	v2 = 2
+	v3 = 3
+]
+
+FileTable: 
+	Empty
+
+
+ Heap: 
+	1 = 20
+	2 = 300
+	3 = 4
+
+
+ Barrier: 
+	 Empty
+
+Domain.SemaphTbl@2a0cefdb
+
+ Output:
+	4, 	20, 	300, 
